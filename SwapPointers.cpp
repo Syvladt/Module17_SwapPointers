@@ -1,8 +1,8 @@
 #include <iostream>
 
-void swap_pointer(int* pa, int* pb)
+void swap_pointer(int& pa, int& pb)
 {
-	std::swap(*pa, *pb);
+	std::swap(pa, pb);
 	return;
 }
 
@@ -15,7 +15,7 @@ int main()
 	if (num1 >= -500 and num1 <= 500 and num2 >= -500 and num2 <= 500)
 	{
 		std::cout << "Вы ввели:\nчисло 1 = " << num1 << "\nчисло 2 = " << num2 << '\n';
-		swap_pointer(&num1, &num2);
+		swap_pointer(num1, num2);
 		std::cout << "\nПосле вызова функции:\nчисло 1 = " << num1 << "\nчисло 2 = " << num2;
 	}
 	else
