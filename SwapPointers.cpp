@@ -3,7 +3,6 @@
 void swap_pointer(int& pa, int& pb)
 {
 	std::swap(pa, pb);
-	return;
 }
 
 int main()
